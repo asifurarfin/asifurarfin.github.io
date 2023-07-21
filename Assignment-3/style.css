@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&family=Roboto&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #050505;
+}
+#cover {
+    background: #050505;
+    position: sticky;
+    top: 0;
+}
+nav {
+    
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 2% 8% 2% 8%;
+}
+.logo{
+    color: rgb(253, 253, 253);
+    font-size: 60px; 
+}
+span {
+    color: #0078f9;
+}
+nav ul li {
+    font-size: 19px;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+nav ul li a{
+    color: azure;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #0078f9;
+    transition: .5s; 
+}
+#content {
+    font-family: 'Poppins', sans-serif;
+    margin: 10% 20% 20% 20%;
+}
+#content h1{
+    color:antiquewhite;
+    margin: 10px 0px 10px 0px;
+    font-size: 75px;
+}
+#content h3 {
+   color: antiquewhite;
+   font-size: 30px; 
+}
+#content h4 {
+    color: #76b3f5;
+    letter-spacing: 2px;
+    font-size:18px ;
+}
+#about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+#about img {
+    height: auto;
+    width: 530px;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.about_text {
+    width: 550px;   
+}
+.about_text h2{
+    color: antiquewhite;
+    font-size: 75px;
+}
+.about_text h5 {
+    color: #0078f9;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+}
+.about_text p{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+#education {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.title {
+    color:antiquewhite;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 65px;
+    text-align: center;
+    
+}
+.title h2 {
+    padding: 100px 0px;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    margin: 15px;
+    
+    text-align: center;
+    border-radius: 20px;
+}
+.card h3{
+    color: #0078f9;
+    letter-spacing: 1px;
+    font-size: 50px;
+    margin: 10px auto;
+}
+.card h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.card h4 {
+    font-size: 24px;
+    color: #ff00a6;
+    margin: 30px 0px;
+}
+.grade p {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+#skill {
+    background-color: rgb(0, 0, 0);
+}
+#skill .box {
+    color: white;
+}
+.circle {
+    height: 150px;
+    width: 150px;
+    padding: 20px 35px;
+    background:#0c0c0c;
+    margin: 0 45px;
+    position: relative;
+    text-align: center;
+    border-radius: 100%;
+}
+.circle h3 {
+    padding: 50% 0%;
+    font-size: 25px;
+    color: antiquewhite;
+}
+
+
+.footer {
+    color: #76b3f5;
+    background-color: black;
+    position: relative;
+    width: 100%;
+    padding: 100px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.social{
+    display: flex;
+    list-style-type: none;
+    font-size: 40px;
+    
+}
+.social li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+.social li a{
+    color:antiquewhite ;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+    #cover ul{
+        display: none;
+    }
+    .logo {
+        padding-left: 20%;
+    }
+    #content h3 {
+        font-size: 25px;
+    }
+    #about {
+        max-width: 100%;
+    }
+    #about img {
+        padding-left: 0%;
+        height: auto;
+        width: 100%;
+    }
+    .main {
+        flex-direction: column;        
+    }
+    .about_text {
+        width: 50%;  
+    }
+    .about_text h2 {
+        font-size: 50px;
+    }
+    
+    .about_text p{
+        color: white;
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+
+    #education {
+        display: none;
+    }
+    #skill {
+        display: none;
+    }
+    
+}
